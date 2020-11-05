@@ -1,7 +1,7 @@
 # api-doc-validation-plugin
-Provide @apiValidation field to apidoc
+Provide `@apiValidation` field to apidoc
 
-#Usage:-
+## Usage:-
 
 ```js
 /*
