@@ -9,7 +9,7 @@ Provide `@apiValidation` field to apidoc
  */
  
 /*
- * @apiValidation email userEmail
+ * @apiValidation user.email email
  */
 
 ```
