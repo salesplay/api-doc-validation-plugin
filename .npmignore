@@ -1,0 +1,8 @@
+src/
+docs/
+build/
+test/
+tsconfig.json
+tslint.json
+yarn.lock
+yarn-error.log

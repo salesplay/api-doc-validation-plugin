@@ -1,0 +1,42 @@
+{
+  "name": "apidoc-plugin-validation",
+  "version": "0.0.1",
+  "description": "Api doc plugin to document validation rules.",
+  "main": "dist/index.js",
+  "bugs": {
+    "url": "https://github.com/salesplay/apidoc-plugin-validation/issues"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "doc": "./node_modules/.bin/apidoc -i test/src/ -o docs",
+    "test": "yarn build && mocha -bail --ui bdd --no-deprecation -r ts-node/register -R spec -t 50000 -r should 'test/**/*.ts'",
+    "fmt:check": "tsfmt --verify",
+    "fmt:fix": "tsfmt --replace",
+    "lint:check": "tslint -c ./tslint.json '**/*.ts'",
+    "lint:fix": "tslint -c ./tslint.json '**/*.ts' --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salesplay/apidoc-plugin-validation.git"
+  },
+  "keywords": [
+    "apidoc",
+    "validation",
+    "plugin"
+  ],
+  "author": "WhizSid <whizsid@aol.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/salesplay/apidoc-plugin-validation#readme",
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.4",
+    "@types/mocha": "^8.0.4",
+    "apidoc": "^0.25.0",
+    "apidoc-core": "^0.12.0",
+    "fs-extra": "^9.0.1",
+    "mocha": "^8.2.1",
+    "should": "^13.2.3",
+    "ts-node": "^9.0.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.0.5"
+  }
+}
