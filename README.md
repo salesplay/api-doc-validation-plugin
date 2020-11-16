@@ -41,6 +41,10 @@ plugins with this pattern.
 
 ```
 
+## Preview
+
+![Screenshot of apidoc validation plugin](./screenshot.png)
+
 ## Contribution
 
-All PRs and issues are welcome. And stars are also welcome.
+	All PRs and issues are welcome. And stars are also welcome.
