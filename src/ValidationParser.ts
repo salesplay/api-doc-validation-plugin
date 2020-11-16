@@ -110,8 +110,15 @@ export class ValidationParser {
 
         for (let i = length - 1; i >= 0; i--) {
             const curElement = elements[i];
-
-            if (curElement.name === "apiparam" && curElement.content.split(" ")[0] === name) {
+            const splitted = curElement.content.split(" ");
+            if (
+                curElement.name === "apiparam" &&
+                (
+                    !splitted[0].startsWith("{") &&
+                    !splitted[0].endsWith("}") &&
+                    splitted[0] === name
+                    ||
+                    splitted[1] === name)) {
                 return i;
             }
         }

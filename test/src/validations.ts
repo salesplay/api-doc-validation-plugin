@@ -14,14 +14,21 @@ const isEmail = (_email: string) => true;
 const isMin = (_txt: string, _min: number) => true;
 
 /**
+* @apiValidator mix Contains mix chars.
+*/
+const isMixChars = (_txt: string) => true;
+
+/**
  * @api {post} /user/register register
  * @apiGroup user
  * @apiName register
  * @apiParam userEmail Email address of the new user
  * @apiValidate userEmail required
  * @apiValidate userEmail email
- * @apiParam userPassword Password of the new user
+ * @apiParam {String} userPassword Password of the new user
  * @apiValidate userPassword min:6
+ * @apiValidate userPassword mix Should contain an upper case letter,
+ * lower case letter, number and a special character.
  */
 const registerUser = (req: any, res: any) => {
     res.status(200);

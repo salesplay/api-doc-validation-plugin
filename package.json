@@ -1,6 +1,6 @@
 {
   "name": "apidoc-plugin-validation",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Api doc plugin to document validation rules.",
   "main": "dist/index.js",
   "bugs": {

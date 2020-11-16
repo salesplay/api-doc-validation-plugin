@@ -1,5 +1,6 @@
 # api-doc-validation-plugin
-Provide `@apiValidation` field to apidoc
+Document request validation rules with `@apiValidator` and
+`@apiValidate` annotations.
 
 ## Installation
 

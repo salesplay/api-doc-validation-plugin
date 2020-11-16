@@ -44,7 +44,9 @@ describe("test generate doc", async () => {
             "Password of the new user"
             + "<h4> Validation Rules:-</h4>"
             + "- <code>min:6</code> - "
-            + "Length of the parameter should exceed the given minimum length."
+            + "Length of the parameter should exceed the given minimum length.<br/>"
+            + "- <code>mix</code> - "
+            + "Should contain an upper case letter,\nlower case letter, number and a special character."
             + "<br/>");
     });
 });
